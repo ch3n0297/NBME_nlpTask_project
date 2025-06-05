@@ -1,0 +1,20 @@
+# 忽略大型模型資料與離線套件資料夾
+Bio_ClinicalBERT_offline/
+deberta-v3-small/
+nbme_ckpt/
+nbme_ckpt_first/
+NLP_Final/nbme_ckpt/
+pytorch_crf_wheels/
+wheels/
+
+# 忽略 Jupyter Notebook 與檢查點
+*.ipynb
+.ipynb_checkpoints/
+
+# 忽略 Python 編譯檔與快取
+__pycache__/
+*.py[cod]
+
+# 忽略虛擬環境與環境設定
+venv/
+.env

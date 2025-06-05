@@ -1,0 +1,158 @@
+===== train.csv =====
+Shape: (14300, 6)
+Data types:
+id             object
+case_num        int64
+pn_num          int64
+feature_num     int64
+annotation     object
+location       object
+dtype: object
+Missing values:
+id             0
+case_num       0
+pn_num         0
+feature_num    0
+annotation     0
+location       0
+dtype: int64
+
+===== test.csv =====
+Shape: (5, 4)
+Data types:
+id             object
+case_num        int64
+pn_num          int64
+feature_num     int64
+dtype: object
+Missing values:
+id             0
+case_num       0
+pn_num         0
+feature_num    0
+dtype: int64
+
+===== sample_submission.csv =====
+Shape: (5, 2)
+Data types:
+id          object
+location    object
+dtype: object
+Missing values:
+id          0
+location    2
+dtype: int64
+
+===== patient_notes.csv =====
+Shape: (42146, 3)
+Data types:
+pn_num         int64
+case_num       int64
+pn_history    object
+dtype: object
+Missing values:
+pn_num        0
+case_num      0
+pn_history    0
+dtype: int64
+
+===== features.csv =====
+Shape: (143, 3)
+Data types:
+feature_num      int64
+case_num         int64
+feature_text    object
+dtype: object
+Missing values:
+feature_num     0
+case_num        0
+feature_text    0
+dtype: int64
+
+Average spans per record: 0.01
+Average span length: 9.74
+
+Average note length: 818.2 chars, 135.5 words
+
+Top 10 feature counts:
+feature_text
+Female                                                             7
+Male                                                               3
+20-year                                                            2
+35-year                                                            2
+Nausea                                                             2
+17-year                                                            2
+Family-history-of-MI-OR-Family-history-of-myocardial-infarction    1
+Chest-pressure                                                     1
+Family-history-of-thyroid-disorder                                 1
+Shortness-of-breath                                                1
+Name: count, dtype: int64
+
+Mean span length by feature (top 10):
+feature_text
+Recent-visit-to-emergency-department-with-negative-workup       2.624167
+Lack-of-other-thyroid-symptoms                                  1.425000
+Prior-normal-periods                                            0.940000
+Irregular-flow-OR-Irregular-frequency-OR-Irregular-intervals    0.783333
+Increased-frequency-recently                                    0.763333
+Stress-due-to-caring-for-elderly-parents                        0.700000
+Associated-throat-tightness                                     0.615000
+Weight-stable                                                   0.340000
+Associated-nausea                                               0.336667
+No-depressed-mood                                               0.330000
+Name: mean_span_len, dtype: float64
+
+Unique counts across datasets:
+  train_pn_num: 1000
+  train_feature_num: 143
+  train_records: 14300
+  test_records: 5
+  submission_records: 5
+  patient_notes: 42146
+  features: 143
+Top 20 tokens in patient notes:
+  and: 140490
+  no: 124693
+  with: 99070
+  she: 97618
+  of: 97378
+  the: 84225
+  a: 78429
+  has: 76939
+  in: 74969
+  is: 65474
+  for: 60207
+  to: 59033
+  or: 56844
+  denies: 49941
+  her: 47985
+  pain: 47538
+  none: 46752
+  2: 38697
+  not: 37897
+  but: 35070
+
+Correlation matrix:
+                n_spans  mean_span_len  char_count  word_count
+n_spans        1.000000       0.739261   -0.005292   -0.002821
+mean_span_len  0.739261       1.000000   -0.005127   -0.001646
+char_count    -0.005292      -0.005127    1.000000    0.944550
+word_count    -0.002821      -0.001646    0.944550    1.000000
+
+Features only in train: 138
+Features only in test: 0
+
+Missing percentages for train:
+Series([], dtype: float64)
+
+Missing percentages for test:
+Series([], dtype: float64)
+
+Missing percentages for patient_notes:
+Series([], dtype: float64)
+
+Missing percentages for features:
+Series([], dtype: float64)
+
+Correlation between word_count and mean_span_len: 0.039
+
