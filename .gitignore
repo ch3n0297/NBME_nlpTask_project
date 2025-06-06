@@ -18,3 +18,6 @@ __pycache__/
 # 忽略虛擬環境與環境設定
 venv/
 .env
+
+*.pt
+hf.py
