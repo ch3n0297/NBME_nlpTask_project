@@ -304,16 +304,6 @@ python final.py
 - `./NLP_Final/nbme_ckpt/cfg.json`: 超參數設定
 - `submission.csv`: 最終提交檔案
 
-## 效能特點
-
-- **記憶體效率**: 4GB GPU 即可運行
-- **訓練速度**: 混合精度訓練提升 30-50% 速度
-- **模型穩定性**: 5-fold CV 確保結果可靠性
-- **預測準確度**: 雙模型集成 + CRF 提升邊界檢測精度
-
-## 技術創新點
-
-1. **雙分詞器架構**: 首次結合通用和醫學領域分詞器
-2. **自適應偽標籤**: 基於預測信心度的動態資料增強
-3. **記憶體高效集成**: 在有限資源下實現複雜模型集成
-4. **智能標註修復**: 自動檢測並修復資料品質問題
+## Model Submodule
+本專案的模型子模組（`hf-model`）實際儲存在 Hugging Face，如果想要直接瀏覽並下載模型，請點擊前往：
+[©在 Hugging Face 上查看模型](https://huggingface.co/N3oHjc/NBME_mixed_model_DeBertaV3AndClinicalBERT)
