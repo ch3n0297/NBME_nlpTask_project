@@ -21,3 +21,5 @@ venv/
 
 *.pt
 hf.py
+
+flowchart.md
